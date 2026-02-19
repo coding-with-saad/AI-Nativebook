@@ -1,0 +1,6 @@
+# Gazebo Physics Configuration
+# This file defines global physics parameters for the simulation.
+gravity: [0.0, 0.0, -9.81]
+max_step_size: 0.001
+real_time_factor: 1.0
+real_time_update_rate: 1000

@@ -1,0 +1,49 @@
+# ros_gz_bridge configuration for Digital Twin Module
+#
+# This file defines the topics to be bridged between ROS 2 and Gazebo.
+# Topics for motor commands from ROS 2 to Gazebo, and sensor data from Gazebo to ROS 2.
+
+# Example configuration. Actual topics will depend on robot and sensor setup.
+
+bridges:
+  # Motor Commands (ROS 2 -> Gazebo)
+  -
+    ros_topic: /cmd_vel
+    gz_topic: /model/humanoid_robot/cmd_vel
+    ros_type: geometry_msgs/msg/Twist
+    gz_type: ignition.msgs.Twist
+    direction: ROS_TO_GZ
+
+  # Joint State Publisher (Gazebo -> ROS 2) - if robot has joints
+  -
+    ros_topic: /joint_states
+    gz_topic: /model/humanoid_robot/joint_state
+    ros_type: sensor_msgs/msg/JointState
+    gz_type: ignition.msgs.Model
+    direction: GZ_TO_ROS
+
+  # Sensor Data (Gazebo -> ROS 2)
+  -
+    ros_topic: /scan
+    gz_topic: /lidar
+    ros_type: sensor_msgs/msg/LaserScan
+    gz_type: ignition.msgs.LaserScan
+    direction: GZ_TO_ROS
+
+  -
+    ros_topic: /depth/image_raw
+    gz_topic: /depth_camera/image_raw
+    ros_type: sensor_msgs/msg/Image
+    gz_type: ignition.msgs.Image
+    direction: GZ_TO_ROS
+
+  -
+    ros_topic: /imu
+    gz_topic: /imu_sensor
+    ros_type: sensor_msgs/msg/Imu
+    gz_type: ignition.msgs.IMU
+    direction: GZ_TO_ROS
+
+  # Note: The actual topic names and types might vary based on your Gazebo version and ROS 2 setup.
+  # For Gazebo Garden, `ignition.msgs` is typically used for Gazebo types.
+  # The `gz_topic` should match the topic published by the Gazebo plugin.
