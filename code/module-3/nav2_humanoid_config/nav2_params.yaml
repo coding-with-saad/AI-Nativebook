@@ -1,0 +1,89 @@
+# Nav2 Parameters for Humanoid Robots
+
+# This file configures the Nav2 stack for a humanoid robot,
+# focusing on non-differential drive kinematics.
+
+# Global parameters
+nav2_controller:
+  ros__parameters:
+    use_sim_time: True
+    # Kinematic parameters for a humanoid
+    min_turning_radius: 0.2 # Example for a humanoid's turning capability
+    max_linear_vel: 0.2
+    max_angular_vel: 0.5
+    transform_tolerance: 0.1
+
+# Controller Server (e.g., TEB Local Planner)
+  controller_server:
+    ros__parameters:
+      controller_plugin_ids: ["FollowPath"]
+      controller_plugin_types: ["teb_local_planner/TebLocalPlannerROS"]
+      # TEB-specific parameters (example)
+      TebLocalPlannerROS:
+        # Configuration tailored for humanoid walking
+        max_vel_x: 0.2
+        max_vel_theta: 0.5
+        acc_lim_x: 0.5
+        acc_lim_theta: 0.8
+        min_obstacle_dist: 0.3
+        # ... other TEB parameters
+
+# Planner Server (e.g., Smac Hybrid-A* Planner)
+nav2_planner:
+  ros__parameters:
+    use_sim_time: True
+    planner_plugin_ids: ["GridBased"]
+    planner_plugin_types: ["nav2_smac_planner/SmacPlannerHybrid"]
+    # SmacPlannerHybrid-specific parameters (example)
+    SmacPlannerHybrid:
+      # Configuration for humanoid footprint and complex kinematics
+      allow_unknown: true
+      max_iterations: 1000
+      max_on_approach_iterations: 100
+      # ... other SmacPlannerHybrid parameters
+
+# Costmap Filters (for obstacles, etc.)
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      update_frequency: 5.0
+      publish_frequency: 2.0
+      global_frame: odom
+      robot_base_frame: base_link
+      resolution: 0.05
+      # Footprint for a humanoid (can be a complex polygon)
+      robot_radius: 0.3 # or use robot_footprint
+      # robot_footprint: "[ [0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2] ]" # Example square footprint
+      plugins: ["obstacle_layer", "inflation_layer"]
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        parameters:
+          observation_sources: laser_scan_sensor point_cloud_sensor
+          laser_scan_sensor: {topic: /scan, max_obstacle_height: 2.0, data_type: LaserScan, clearing: true, marking: true}
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        parameters:
+          inflation_radius: 0.5
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      update_frequency: 1.0
+      publish_frequency: 1.0
+      global_frame: map
+      robot_base_frame: base_link
+      resolution: 0.05
+      robot_radius: 0.3 # or use robot_footprint
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        parameters:
+          map_subscribe_threshold: 0.0
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        parameters:
+          observation_sources: laser_scan_sensor point_cloud_sensor
+          laser_scan_sensor: {topic: /scan, max_obstacle_height: 2.0, data_type: LaserScan, clearing: true, marking: true}
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        parameters:
+          inflation_radius: 0.5
