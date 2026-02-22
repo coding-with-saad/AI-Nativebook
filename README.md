@@ -8,6 +8,14 @@ This project is structured as a series of modules, each building upon the last t
 
 The core of this project is a Docusaurus-based website that serves as the book, providing step-by-step tutorials, explanations, and code examples.
 
+## Project Status
+
+-   **Module 1: ROS 2 Basics:** Planned and initial setup complete.
+-   **Module 2: Digital Twin:** Implemented, providing a simulated environment for the robot.
+-   **Module 3: NVIDIA Isaac Brain:** Implemented, integrating advanced perception and navigation.
+-   **Module 4: Vision-Language-Action (VLA) Module:** Implemented, enabling natural language interaction.
+-   **Website:** The Docusaurus website is live and has been recently upgraded for a better user experience.
+
 ## Modules
 
 ### Module 1: ROS 2 Basics
