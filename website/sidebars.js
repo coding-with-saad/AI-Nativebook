@@ -19,6 +19,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 1',
+      collapsible: true, // Added for improved navigation
+      collapsed: true,   // Added for improved navigation
       link: {
         type: 'generated-index',
         description: 'ROS 2 Basics for AI-Native applications.'
@@ -28,6 +30,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 2',
+      collapsible: true, // Added for improved navigation
+      collapsed: true,   // Added for improved navigation
       link: {
         type: 'generated-index',
         description: 'Learn about Digital Twin environments.'
@@ -37,6 +41,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 3',
+      collapsible: true, // Added for improved navigation
+      collapsed: true,   // Added for improved navigation
       link: {
         type: 'generated-index',
         description: 'Learn about the AI-Robot Brain with NVIDIA Isaac.'
@@ -46,6 +52,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 4',
+      collapsible: true, // Added for improved navigation
+      collapsed: true,   // Added for improved navigation
       link: {
         type: 'generated-index',
         description: 'Learn about Vision-Language-Action (VLA) systems.'
