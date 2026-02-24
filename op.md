@@ -186,6 +186,10 @@ a:hover {
   /* More compact spacing for mobile */
   --ifm-spacing-unit: 0.8rem;
 }
+/*
+ * Task T018: Applied typographic scale and spacing using CSS variables.
+ * Verification: Ensure the entire theme consistently uses these variables for text and spacing elements.
+ */
 
 /* Consistent Spacing Rules */
 p {
@@ -218,19 +222,23 @@ h1:first-child, h2:first-child, h3:first-child {
   margin-top: var(--ifm-spacing-md); /* Less top margin if it's the first element */
 }
 
-/* ===============================
-   LOGO REMOVED
-=============================== */
-.navbar__logo,
-.navbar__logo img {
-  display: none !important; /* hides logo completely */
+/* Unique Logo Styling */
+.navbar__logo {
+  height: 2rem; /* Smaller height to fit inside header */
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  filter: drop-shadow(0 0 2px rgba(51, 102, 255, 0.3));
 }
 
-/* Keep navbar brand aligned properly after removing logo */
+.navbar__logo:hover {
+  transform: scale(1.05); /* Slightly smaller scale on hover */
+  filter: drop-shadow(0 0 6px rgba(51, 102, 255, 0.6));
+}
+
 .navbar__brand {
   display: flex;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: var(--ifm-border-radius);
   transition: background-color 0.2s ease;
 }
@@ -239,3 +247,4 @@ h1:first-child, h2:first-child, h3:first-child {
   background-color: var(--ifm-color-emphasis-100);
   text-decoration: none;
 }
+
