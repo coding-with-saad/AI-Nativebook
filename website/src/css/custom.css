@@ -221,3 +221,30 @@ h1, h2, h3, h4, h5, h6 {
 h1:first-child, h2:first-child, h3:first-child {
   margin-top: var(--ifm-spacing-md); /* Less top margin if it's the first element */
 }
+
+/* Unique Logo Styling */
+.navbar__logo {
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  filter: drop-shadow(0 0 2px rgba(51, 102, 255, 0.3));
+}
+
+.navbar__logo:hover {
+  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0 0 8px rgba(51, 102, 255, 0.6));
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--ifm-border-radius);
+  transition: background-color 0.2s ease;
+}
+
+.navbar__brand:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
