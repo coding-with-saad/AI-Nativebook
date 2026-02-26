@@ -1,0 +1,14 @@
+[project]
+name = "ai-native-book-pipeline"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "cohere",
+    "qdrant-client",
+    "httpx",
+    "beautifulsoup4",
+    "python-dotenv",
+    "pytest",
+    "langchain",
+    "langchain-text-splitters"
+]

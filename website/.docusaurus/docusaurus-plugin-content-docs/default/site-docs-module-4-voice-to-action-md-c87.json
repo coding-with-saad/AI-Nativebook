@@ -1,0 +1,20 @@
+{
+  "id": "module-4/voice-to-action",
+  "title": "Voice-to-Action (Whisper + ROS 2)",
+  "description": "This chapter details the implementation of the Voice-to-Action pipeline, enabling the robot to understand and react to spoken commands. This pipeline integrates the Whisper speech-to-text model with ROS 2 for seamless communication.",
+  "source": "@site/docs/module-4/voice-to-action.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/voice-to-action",
+  "permalink": "/docs/module-4/voice-to-action",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-4/voice-to-action.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "LLM-Based Cognitive Planning",
+    "permalink": "/docs/module-4/llm-cognitive-planning"
+  }
+}

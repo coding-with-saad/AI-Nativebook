@@ -1,0 +1,27 @@
+{
+  "id": "module-2/gazebo-physics",
+  "title": "Gazebo Physics: Setting up your Digital Twin",
+  "description": "This chapter covers the basics of Gazebo Physics for Digital Twin environments. We'll explore how to configure physics properties and integrate robot models to create a realistic simulation.",
+  "source": "@site/docs/module-2/gazebo-physics.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/gazebo-physics",
+  "permalink": "/docs/module-2/gazebo-physics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-2/gazebo-physics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Module 2",
+    "permalink": "/docs/category/module-2"
+  },
+  "next": {
+    "title": "Unity Environments: Visualizing your Digital Twin",
+    "permalink": "/docs/module-2/unity-environments"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ai_native_book",
+  "vectors": {
+    "size": 1024,
+    "distance": "Cosine"
+  },
+  "payload_schema": {
+    "url": "keyword",
+    "title": "text",
+    "module": "keyword",
+    "content": "text",
+    "chunk_index": "integer",
+    "source_hash": "keyword"
+  }
+}

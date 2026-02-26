@@ -1,0 +1,149 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "module-1/chapter-1-basics",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro"
+            },
+            {
+              "id": "module-1/chapter-1-basics",
+              "path": "/docs/module-1/chapter-1-basics",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-1/chapter-2-agents",
+              "path": "/docs/module-1/chapter-2-agents",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-1/chapter-3-urdf",
+              "path": "/docs/module-1/chapter-3-urdf",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-2/gazebo-physics",
+              "path": "/docs/module-2/gazebo-physics",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-2/sensor-simulation",
+              "path": "/docs/module-2/sensor-simulation",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-2/sim-to-real-validation",
+              "path": "/docs/module-2/sim-to-real-validation",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-2/unity-environments",
+              "path": "/docs/module-2/unity-environments",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-3/isaac-ros-vslam-acceleration",
+              "path": "/docs/module-3/isaac-ros-vslam-acceleration",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-3/isaac-sim-synthetic-data",
+              "path": "/docs/module-3/isaac-sim-synthetic-data",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-3/nav2-humanoid-planning",
+              "path": "/docs/module-3/nav2-humanoid-planning",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-4/capstone-vla-pipeline",
+              "path": "/docs/module-4/capstone-vla-pipeline",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-4/llm-cognitive-planning",
+              "path": "/docs/module-4/llm-cognitive-planning",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "module-4/voice-to-action",
+              "path": "/docs/module-4/voice-to-action",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site"
+            },
+            {
+              "id": "/category/module-1",
+              "path": "/docs/category/module-1",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "/category/module-2",
+              "path": "/docs/category/module-2",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "/category/module-3",
+              "path": "/docs/category/module-3",
+              "sidebar": "moduleSidebar"
+            },
+            {
+              "id": "/category/module-4",
+              "path": "/docs/category/module-4",
+              "sidebar": "moduleSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "moduleSidebar": {
+              "link": {
+                "path": "/docs/category/module-1",
+                "label": "Module 1"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

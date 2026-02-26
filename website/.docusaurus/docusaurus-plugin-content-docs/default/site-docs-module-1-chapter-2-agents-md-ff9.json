@@ -1,0 +1,24 @@
+{
+  "id": "module-1/chapter-2-agents",
+  "title": "Chapter 2: Python Agents",
+  "description": "An \"agent\" in ROS 2 is simply a Node that makes decisions. It takes inputs (sensors) and produces outputs (actuation or status) based on internal logic.",
+  "source": "@site/docs/module-1/chapter-2-agents.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/chapter-2-agents",
+  "permalink": "/docs/module-1/chapter-2-agents",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-1/chapter-2-agents.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Chapter 1: ROS 2 Basics",
+    "permalink": "/docs/module-1/chapter-1-basics"
+  },
+  "next": {
+    "title": "Chapter 3: Humanoid Structure",
+    "permalink": "/docs/module-1/chapter-3-urdf"
+  }
+}
