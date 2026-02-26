@@ -1,0 +1,24 @@
+{
+  "id": "module-1/chapter-1-basics",
+  "title": "Chapter 1: ROS 2 Basics",
+  "description": "The nervous system of an intelligent robot relies on robust communication. In ROS 2, this is achieved through the Graph, a network of Nodes communicating via Topics and Services.",
+  "source": "@site/docs/module-1/chapter-1-basics.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/chapter-1-basics",
+  "permalink": "/docs/module-1/chapter-1-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-1/chapter-1-basics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Module 1",
+    "permalink": "/docs/category/module-1"
+  },
+  "next": {
+    "title": "Chapter 2: Python Agents",
+    "permalink": "/docs/module-1/chapter-2-agents"
+  }
+}

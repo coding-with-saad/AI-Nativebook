@@ -1,0 +1,24 @@
+{
+  "id": "module-4/llm-cognitive-planning",
+  "title": "LLM-Based Cognitive Planning",
+  "description": "This chapter delves into the implementation of LLM-based cognitive planning, enabling the robot to perform higher-level reasoning and task decomposition. This system leverages Large Language Models (LLMs) to break down complex commands into executable sub-tasks and generate appropriate function calls.",
+  "source": "@site/docs/module-4/llm-cognitive-planning.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/llm-cognitive-planning",
+  "permalink": "/docs/module-4/llm-cognitive-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-4/llm-cognitive-planning.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Capstone: Autonomous Humanoid Pipeline",
+    "permalink": "/docs/module-4/capstone-vla-pipeline"
+  },
+  "next": {
+    "title": "Voice-to-Action (Whisper + ROS 2)",
+    "permalink": "/docs/module-4/voice-to-action"
+  }
+}

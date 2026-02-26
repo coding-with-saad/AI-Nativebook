@@ -1,0 +1,27 @@
+{
+  "id": "module-3/isaac-sim-synthetic-data",
+  "title": "Isaac Sim & Synthetic Data: Powering AI-Robot Brains",
+  "description": "This chapter explores NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, crucial for training robust AI perception models for humanoid robots.",
+  "source": "@site/docs/module-3/isaac-sim-synthetic-data.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/isaac-sim-synthetic-data",
+  "permalink": "/docs/module-3/isaac-sim-synthetic-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-3/isaac-sim-synthetic-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Module 3",
+    "permalink": "/docs/category/module-3"
+  },
+  "next": {
+    "title": "Isaac ROS (VSLAM & Acceleration): Real-time Perception",
+    "permalink": "/docs/module-3/isaac-ros-vslam-acceleration"
+  }
+}

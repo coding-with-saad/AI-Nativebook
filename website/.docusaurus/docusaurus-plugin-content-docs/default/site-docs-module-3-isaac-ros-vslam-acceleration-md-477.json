@@ -1,0 +1,27 @@
+{
+  "id": "module-3/isaac-ros-vslam-acceleration",
+  "title": "Isaac ROS (VSLAM & Acceleration): Real-time Perception",
+  "description": "This chapter covers NVIDIA Isaac ROS for accelerated perception, focusing on Visual Simultaneous Localization and Mapping (VSLAM), a critical component for autonomous robots.",
+  "source": "@site/docs/module-3/isaac-ros-vslam-acceleration.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/isaac-ros-vslam-acceleration",
+  "permalink": "/docs/module-3/isaac-ros-vslam-acceleration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/coding-with-saad/AI-Nativebook/tree/main/docs/module-3/isaac-ros-vslam-acceleration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "moduleSidebar",
+  "previous": {
+    "title": "Isaac Sim & Synthetic Data: Powering AI-Robot Brains",
+    "permalink": "/docs/module-3/isaac-sim-synthetic-data"
+  },
+  "next": {
+    "title": "Nav2 Path Planning for Humanoids: Autonomous Movement",
+    "permalink": "/docs/module-3/nav2-humanoid-planning"
+  }
+}
