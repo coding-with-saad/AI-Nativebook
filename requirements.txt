@@ -1,0 +1,4 @@
+qdrant-client
+cohere
+pandas
+pytest
