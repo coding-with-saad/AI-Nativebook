@@ -6,7 +6,7 @@ Welcome to the "AI Native" book project! This repository contains the companion 
 
 This project is structured as a series of modules, each building upon the last to create a sophisticated, autonomous humanoid robot. We follow a spec-driven development (SDD) approach, with detailed specifications, plans, and tasks for each module.
 
-The core of this project is a Docusaurus-based website that serves as the book, providing step-by-step tutorials, explanations, and code examples.
+The core of this project is a Docusaurus-based website that serves as the book, providing step-by-step tutorials, explanations, and code examples. Recently, we've enhanced the interactive experience by integrating a Retrieval-Augmented Generation (RAG) chatbot, allowing users to ask questions directly from the book's content.
 
 ## Project Status
 
@@ -15,6 +15,16 @@ The core of this project is a Docusaurus-based website that serves as the book, 
 -   **Module 3: NVIDIA Isaac Brain:** Implemented, integrating advanced perception and navigation.
 -   **Module 4: Vision-Language-Action (VLA) Module:** Implemented, enabling natural language interaction.
 -   **Website:** The Docusaurus website is live and has been recently upgraded for a better user experience.
+-   **RAG Chatbot Integration:** Implemented, providing an interactive Q&A experience based on the book content.
+
+## New Feature: RAG Chatbot
+
+An interactive RAG chatbot has been integrated into the Docusaurus frontend. This feature allows users to:
+-   Ask questions directly related to the book's content.
+-   Receive answers grounded in the provided documentation.
+-   See source citations (from the book sections) for the generated answers.
+
+The chatbot UI is accessible via a persistent floating button on the Docusaurus website.
 
 ## Modules
 
@@ -54,7 +64,9 @@ The capstone of our project, this module implements a Vision-Language-Action (VL
 ## Technologies Used
 
 -   **Robotics**: ROS 2 (Humble/Iron), Gazebo
--   **AI/ML**: NVIDIA Isaac, OpenAI Whisper, Large Language Models (LLMs)
+-   **AI/ML**: NVIDIA Isaac, OpenAI Whisper, Large Language Models (LLMs), OpenAI Agents SDK, Qdrant (for retrieval)
+-   **Backend**: Python, FastAPI
+-   **Frontend**: Docusaurus, React
 -   **Documentation**: Docusaurus
 -   **Development**: Python, C++, Git, Spec-Driven Development (SDD)
 
@@ -66,22 +78,45 @@ The capstone of our project, this module implements a Vision-Language-Action (VL
     cd AI-Nativebook
     ```
 
-2.  **Set up the environment**:
-    Each module has its own set of dependencies and setup instructions. Please refer to the `quickstart.md` file within each module's `specs` directory for detailed setup instructions.
+2.  **Set up Environment Variables**:
+    Create a `.env` file in the project root and add your API keys. For the RAG chatbot, you'll need an API key for the LLM. Example:
+    ```
+    Openrouter_api_key="sk-your-openrouter-api-key"
+    ```
 
-3.  **Explore the website**:
-    The Docusaurus website can be run locally for a better reading experience:
+3.  **Backend Setup (RAG API)**:
+    Navigate to the project root (`F:\ai native book`) in your terminal.
     ```bash
-    cd website
+    # Install Python dependencies
+    pip install -r requirements.txt # Or individually: pip install fastapi uvicorn python-dotenv openai-agents
+    
+    # Run the backend server
+    python -m uvicorn api:app --reload --port 8000
+    ```
+    Keep this terminal window open and running.
+
+4.  **Frontend Setup (Docusaurus Website)**:
+    Open a **new terminal window** and navigate to the `website` directory (`F:\ai native book\website`).
+    ```bash
+    # Install Node.js dependencies
     npm install
+    
+    # Run the frontend development server
     npm start
     ```
+    Keep this terminal window open and running.
+
+5.  **Explore the website**:
+    Once both the backend and frontend are running, open your web browser and navigate to `http://localhost:3000`. You should see the Docusaurus website with the interactive RAG chatbot available via a floating button.
 
 ## Project Structure
 
--   `code/`: Contains the source code for each module, organized by module number.
--   `website/`: The Docusaurus project for the book.
--   `specs/`: Detailed specifications, plans, and tasks for each module.
+-   `api.py`: The FastAPI application for the RAG backend.
+-   `src/`: Contains core Python modules, including `agent.py` and `retrieval_pipeline.py`.
+-   `code/`: Contains the source code for each robotic module, organized by module number.
+-   `website/`: The Docusaurus project for the book's frontend.
+-   `specs/`: Detailed specifications, plans, and tasks for each module and feature.
 -   `history/`: Prompt History Records (PHRs) and Architectural Decision Records (ADRs) that document the development process.
+-   `.env`: Environment variables for API keys and configurations.
 
 We hope you find this project informative and inspiring. Happy building!
