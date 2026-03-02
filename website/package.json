@@ -24,7 +24,9 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/types": "3.9.2"
+    "@docusaurus/types": "3.9.2",
+    "@testing-library/react": "^16.3.2",
+    "jest": "^30.2.0"
   },
   "browserslist": {
     "production": [

@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+  title: RAG Agent API
+  description: API for querying the RAG agent.
+  version: 0.1.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+paths:
+  /query:
+    post:
+      summary: Query the RAG agent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Query'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+components:
+  schemas:
+    Query:
+      type: object
+      required:
+        - question
+      properties:
+        question:
+          type: string
+          description: The user's question.
+    Response:
+      type: object
+      properties:
+        answer:
+          type: string
+          description: The agent's answer, formatted in Markdown.
+        sources:
+          type: array
+          items:
+            $ref: '#/components/schemas/SourceReference'
+    SourceReference:
+      type: object
+      properties:
+        path:
+          type: string
+          description: The path to the source file.
+        heading:
+          type: string
+          description: The specific heading or section within the source file.
+        page:
+          type: integer
+          description: The page number, if applicable.
