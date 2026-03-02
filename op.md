@@ -248,3 +248,32 @@ h1:first-child, h2:first-child, h3:first-child {
   text-decoration: none;
 }
 
+
+
+
+Build RAG agent with retrieval capability
+
+Target:
+Create an AI agent using OpenAI Agents SDK that integrates Qdrant retrieval to answer questions based on stored book embeddings.
+
+Success criteria:
+- Agent receives user query and triggers retrieval pipeline
+- Query embedded using same embedding model as ingestion
+- Top_k relevant chunks retrieved from Qdrant
+- Retrieved context injected into agent prompt
+- Agent generates answer grounded only in retrieved content
+- Logs show retrieved sources and response time
+- System prevents hallucination outside provided context
+
+
+Constraints:
+- No frontend integration yet
+- No deployment scaling
+- No authentication system
+- No analytics or monitoring layer
+
+Not building:
+- UI interface
+- Backend-frontend connection
+- Advanced memory system
+- Multi-agent orchestration
