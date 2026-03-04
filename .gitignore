@@ -44,5 +44,12 @@ yarn-debug.log*
 yarn-error.log*
 __pycache__/
 # Environment files
-.env.*
+.env
 *.pyc
+.env.*
+.env.template
+**/.env
+website/node_modules/
+website/.docusaurus/
+website/build/
+website/package-lock.json
